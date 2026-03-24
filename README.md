@@ -20,17 +20,15 @@ Two obstacle categories are distinguished throughout all tools:
 ---
 
 ## Repository Contents
-
+ 
 | File | Description |
 |---|---|
 | `lidar_placement.py` | Interactive GUI for room configuration, obstacle placement, algorithm execution, and JSON export of optimised sensor positions. |
 | `lidar_viewer.py` | Live viewer that overlays theoretical coverage with real-time RPLidar scan data. Loads `sensor_positions.json` and assigns COM ports via a Tkinter dialogue. |
 | `lidar_validation.py` | Validation tool that accumulates real sensor observations per grid cell and exports a triangle-level coverage heatmap and CSV report. |
-| `sensor_positions.json` | Exported sensor configuration for a 3.0 × 3.5 m room with two Category-A obstacles and one Category-B area; three sensors placed at (2.9, 3.5 m), (0.1, 0.1 m), and (2.1, 2.5 m). |
-| `validation_20260313_151538.csv` | Validation run — 3.0 × 3.5 m room, grid cell 10 cm, 2672 triangles, **100.0 %** coverage, 0.0 % blind zones. |
-| `validation_20260313_152531.csv` | Validation run — 3.0 × 3.5 m room, grid cell 20 cm, 576 triangles, **100.0 %** coverage, 0.0 % blind zones. |
-| `validation_20260313_155839.csv` | Validation run — 3.0 × 3.5 m room, grid cell 10 cm, 3012 triangles, **95.0 %** coverage, 5.0 % blind zones. |
-
+ 
+The repository also includes the sensor position configuration used in the experiments (`sensor_positions.json`) as well as three validation result CSV files recorded on 13 March 2026 in a 3.0 × 3.5 m room at grid cell sizes of 10 cm.
+ 
 ---
 
 ## Requirements
@@ -90,19 +88,6 @@ ci, cj, direction, x_m, y_m, covered_by_sensor, result
 
 Tested with the **RPLidar A1M8** (maximum range 6.0 m, 360° field of view). The sensor range constant `SENSOR_RANGE` in all three scripts can be adjusted for other models.
 
----
-
-## Citation
-
-If you use this code in your research, please cite:
-
-```
-D'Avis, N. & Faquiri, S. (2025). Optimization and Validation of a 2D-LiDAR-Coverage
-Algorithm. In Proceedings of PETRA '25. ACM. https://doi.org/10.1145/3733155.3737907
-
-D'Avis, N. & Faquiri, S. (2024). Optimal 2D-LiDAR-Sensor Coverage of a Room.
-In Proceedings of iWOAR 2024. ACM.
-```
 
 ---
 
