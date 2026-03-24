@@ -1,0 +1,35 @@
+{
+  "room": {
+    "width": 3.0,
+    "height": 3.5,
+    "cell_size": 0.1,
+    "obstacles_a": [],
+    "obstacles_b": []
+  },
+  "sensors": [
+    {
+      "id": 1,
+      "grid": [
+        0,
+        34
+      ],
+      "meters": [
+        0.05,
+        3.45
+      ],
+      "port": ""
+    },
+    {
+      "id": 2,
+      "grid": [
+        29,
+        0
+      ],
+      "meters": [
+        2.95,
+        0.05
+      ],
+      "port": ""
+    }
+  ]
+}
