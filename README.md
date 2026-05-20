@@ -95,4 +95,3 @@ Tested with the **RPLidar A1M8** (maximum range 6.0 m, 360° field of view). The
 
 **Noel D'Avis** and **Silvia Faquiri**  
 RheinMain University of Applied Sciences, Wiesbaden, Germany  
-Fraunhofer IGD, Darmstadt, Germany
